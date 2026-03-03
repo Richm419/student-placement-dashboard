@@ -1,13 +1,10 @@
-# student-placement-dashboard
-Power BI + Python clinical placement optimization dashboard
 # Student Placement Optimization Dashboard
 
-## Overview
-This project simulates a clinical placement optimization workflow using Python and Power BI.
+Power BI + Python project simulating a clinical placement optimization workflow.
 
-Students are assigned to clinical sites based on region preference and site capacity constraints. The results are then visualized in an interactive dashboard to monitor placement efficiency, utilization, and remaining capacity.
+This project demonstrates data preparation, assignment logic, and interactive dashboard reporting to track placement efficiency, utilization, and remaining capacity.
 
-This mirrors real-world healthcare and operations analytics use cases.
+Note: All data in this project is simulated for portfolio/demo purposes.
 
 ---
 
@@ -17,59 +14,78 @@ This mirrors real-world healthcare and operations analytics use cases.
 
 ---
 
-## Tech Stack
-- Python (pandas)
-- Power BI
-- DAX measures
-- CSV datasets
-- Git/GitHub
+## Project Objective
+
+The goal of this project is to simulate assigning students to clinical sites based on:
+
+- region preference
+- program type
+- site capacity constraints
+
+Then visualize outcomes in a dashboard to monitor:
+
+- overall placement rate
+- placement volume by region/program
+- remaining capacity by site
+
+This mirrors real-world operations analytics and resource allocation use cases.
 
 ---
 
-## Workflow
+## Tools & Technologies
 
-### 1. Data Generation (Python)
-A Python script assigns students to available clinical sites:
-- respects region preference
-- checks capacity limits
-- outputs placements.csv
-
-File:
-scripts/placement_logic.py
-
-### 2. Data Modeling (Power BI)
-- students, sites, and placements tables
-- relational star schema
-- one-to-many relationships
-
-### 3. Dashboard
-Includes:
-- KPI cards (total students, placed, rate, remaining capacity)
-- placements by region
-- placements by program
-- site-level capacity table
-- interactive slicers (filters)
-
----
-
-## Results
-- 150 students
-- 141 placed
-- 94% placement rate
-- 23 seats remaining capacity
+- Power BI (data modeling + dashboard development)
+- Python (data preparation / assignment logic)
+- Pandas
+- CSV data structures
+- Git & GitHub
 
 ---
 
 ## Project Structure
-student-placement-dashboard
+student-placement-dashboard/
 │
 ├── data/
-├── scripts/
-├── powerbi/
 ├── images/
+├── powerbi/
+├── scripts/
+│ └── dashboard_preview.png
 └── README.md
 
 ---
 
-## Author
-Rich Mansfield
+## Key Metrics Included
+
+- Total Students
+- Students Placed
+- Placement Rate
+- Remaining Capacity
+- Students Placed by Region
+- Students Placed by Program
+- Site Capacity / Seats Filled / Remaining Capacity (table)
+
+---
+
+## Business Insights Demonstrated
+
+- Capacity bottlenecks by site and region
+- Which programs face placement constraints
+- Where additional clinical partnerships would improve placement rate
+- How preference-based assignment impacts utilization
+
+---
+
+## How To Use
+
+1. Review the data files in `/data`
+2. Run the Python scripts in `/scripts` to reproduce or adjust assignments
+3. Open the Power BI file in `/powerbi` to explore the dashboard
+
+---
+
+## What This Project Demonstrates
+
+- constraint-based thinking (capacity + preference)
+- data preparation and validation
+- KPI reporting and operations dashboards
+- turning operational workflows into decision-ready visuals
